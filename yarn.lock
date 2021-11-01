@@ -1812,6 +1812,18 @@
     "@manypkg/get-packages" "^1.0.1"
     semver "^5.4.1"
 
+"@changesets/assemble-release-plan@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@changesets/assemble-release-plan/-/assemble-release-plan-5.0.1.tgz#80e9b750705677eb2d6356c581ed9c2e97fd68e7"
+  integrity sha512-KQqafvScTFQ/4Q2LpLmDYhU47LWvIGcgVS8tzKU8fBvRdKuLGQXe42VYbwVM0cHIkFd/b6YFn+H2QMdKC2MjIQ==
+  dependencies:
+    "@babel/runtime" "^7.10.4"
+    "@changesets/errors" "^0.1.4"
+    "@changesets/get-dependents-graph" "^1.2.2"
+    "@changesets/types" "^4.0.1"
+    "@manypkg/get-packages" "^1.0.1"
+    semver "^5.4.1"
+
 "@changesets/changelog-github@^0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@changesets/changelog-github/-/changelog-github-0.4.1.tgz#880cb624477972ea103abf6942cf4ee3106f682b"
@@ -1883,6 +1895,17 @@
   integrity sha512-vJOibo9SkqhVbgfq5AHIlQ7tzkYQIXh3tPAnlNLy2bPZsU+SByd74GaxHYWt1zOBlncU25WKrIM6J7XBB+GVUg==
   dependencies:
     "@changesets/types" "^4.0.0"
+    "@manypkg/get-packages" "^1.0.1"
+    chalk "^2.1.0"
+    fs-extra "^7.0.1"
+    semver "^5.4.1"
+
+"@changesets/get-dependents-graph@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@changesets/get-dependents-graph/-/get-dependents-graph-1.2.2.tgz#7a2238f3d1a023de83d37b727a0da15826e88d73"
+  integrity sha512-3zJRw6TcexmOrmIZNOXpIRsZtqtrdmlzbqp4+V0VgnBvTxz16rqCS9VBsBqFYeJDWFj3soOlHUMeTwLghr18DA==
+  dependencies:
+    "@changesets/types" "^4.0.1"
     "@manypkg/get-packages" "^1.0.1"
     chalk "^2.1.0"
     fs-extra "^7.0.1"

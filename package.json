@@ -35,7 +35,7 @@
   "dependencies": {
     "@actions/core": "^1.4.0",
     "@actions/exec": "^1.1.0",
-    "@changesets/assemble-release-plan": "^5.0.0",
+    "@changesets/assemble-release-plan": "^5.0.1",
     "@changesets/config": "^1.6.0",
     "@changesets/parse": "^0.3.8",
     "@changesets/types": "^4.0.0",
