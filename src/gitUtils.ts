@@ -40,9 +40,12 @@ export const switchToMaybeExistingBranch = async (branch: string) => {
   const { stdout, stderr } = await execWithOutput('git', ['checkout', branch], {
     ignoreReturnCode: true,
   })
-  console.log('stdout:', stdout)
-  console.log('stderr:', stderr)
-  const shouldCreateBranch = !stdout.toString().includes(`Switched to`)
+
+  const shouldCreateBranch = !(
+    stderr.toString().includes(`Switched to`) ||
+    stdout.toString().includes(`Switched to`)
+  )
+
   if (shouldCreateBranch) {
     await exec('git', ['checkout', '-b', branch])
   }
