@@ -193,6 +193,8 @@ export const comment = async () => {
       errFromFetchingChangedFiles
 
     if (commentId != null) {
+      console.log(`found a already existing comment: ${commentId}`)
+
       return api.MergeRequestNotes.edit(
         context.projectId,
         mrIid,
