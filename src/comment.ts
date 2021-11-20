@@ -192,9 +192,8 @@ export const comment = async () => {
         : getAbsentMessage(latestCommitSha, addChangesetUrl, releasePlan)) +
       errFromFetchingChangedFiles
 
+    console.log(`found an already existing comment: ${commentId!}`)
     if (commentId != null) {
-      console.log(`found a already existing comment: ${commentId}`)
-
       return api.MergeRequestNotes.edit(
         context.projectId,
         mrIid,
